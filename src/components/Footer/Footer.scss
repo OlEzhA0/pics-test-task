@@ -1,0 +1,241 @@
+@import "../../vars.scss";
+
+.Footer {
+  padding: 40px 0;
+  margin: 80px auto 0;
+  max-width: 1170px;
+  white-space: normal;
+
+  @media screen and (max-width: $extraMediumScreen) {
+    padding: 40px 25px;
+  }
+
+  &__MainLinks {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(160px, 292.5px));
+
+    @media screen and (max-width: $extraMediumScreen) {
+      grid-template-columns: repeat(2, minmax(160px, 339.5px));
+    }
+
+    @media screen and (max-width: $extraSmallScreen) {
+      grid-template-columns: repeat(1, minmax(280px, 412px));
+    }
+  }
+
+  &__MainContainer {
+    padding: 0 10px;
+
+    @media screen and (max-width: $extraSmallScreen) {
+      margin: 0 -10px 50px -10px;
+      max-width: 280px;
+      box-sizing: border-box;
+    }
+
+    &--icons {
+      @media screen and (max-width: $extraSmallScreen) {
+        display: none;
+      }
+    }
+  }
+
+  &__MainLink {
+    list-style-type: none;
+    font-size: $smallFontSize;
+    margin: 6px 0;
+    font-weight: 300;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      height: 30px;
+      margin: 0;
+      line-height: 30px;
+    }
+  }
+
+  &__MainLinkTag {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2;
+    &:hover {
+      cursor: pointer;
+      color: $mainPrimeColor;
+    }
+  }
+
+  &__MainTitle {
+    font-size: 30px;
+    height: 37px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    color: #999;
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #3c3c3c;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__MainIcon {
+    display: flex;
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $mainPrimeColor;
+    }
+  }
+
+  &__MainIconSvg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__MainContainerIcons {
+    display: flex;
+    list-style-type: none;
+
+    @media screen and (max-width: $extraSmallScreen) {
+      display: none;
+    }
+
+    &--mobile {
+      display: flex;
+      margin-bottom: 50px;
+      @media screen and (min-width: $extraSmallScreen) {
+        display: none;
+      }
+    }
+  }
+
+  &__MainContainerLi {
+    margin-right: 10px;
+  }
+
+  &__GeneralInfo {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__GeneralContainer {
+    padding: 0 10px;
+    @media screen and (max-width: $extraMediumScreen) {
+      margin: 0 -10px;
+    }
+  }
+
+  &__GeneralLinkWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: $extraSmallScreen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__GeneralLinkWrapper {
+    padding: 0 10px;
+
+    @media screen and (max-width: $extraSmallScreen) {
+      margin-bottom: 50px;
+      padding: 0;
+    }
+
+    &:first-child {
+      padding: 0 10px 0 0;
+    }
+  }
+
+  &__GeneralTitle {
+    list-style-type: none;
+    color: #999;
+    font-weight: bold;
+    font-size: $smallFontSize;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+
+  &__Right {
+    width: 50%;
+    padding: 0 10px;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      width: 100%;
+      margin: 0 -10px;
+    }
+  }
+
+  &__RightLogo {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 13px;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #3c3c3c;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__RightText {
+    color: #999;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__RightList {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__RightLink {
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.2s;
+    text-decoration: none;
+    &:hover {
+      color: $mainPrimeColor;
+    }
+  }
+
+  &__Sep {
+    height: 15px;
+    overflow: hidden;
+    width: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__Tools {
+    display: flex;
+    align-items: center;
+    color: #999;
+  }
+}

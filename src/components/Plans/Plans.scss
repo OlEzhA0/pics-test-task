@@ -1,0 +1,224 @@
+@import "../../vars.scss";
+
+.Plans {
+  padding-top: 120px;
+  white-space: normal;
+  &__Cards {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 338px;
+    grid-column-gap: 20px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $largeScreen) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+    }
+
+    @media screen and (max-width: $mediumScreen) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+
+    @media screen and (max-width: $smallScreen) {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+
+  &__PerPlan {
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0 -7.5px 3px 0;
+    vertical-align: bottom;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    bottom: 3px;
+    left: 1px;
+  }
+
+  &__CardInfo {
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-height: 260px;
+
+    @media screen and (max-width: $smallScreen) {
+      max-height: 310px;
+      height: 100%;
+    }
+  }
+
+  &__Card {
+    overflow: hidden;
+    z-index: -1;
+  
+    @media screen and (max-width: $smallScreen) {
+      width: 280px;
+      margin: 0 auto;
+      height: 388px;
+    }
+  }
+
+  &__CardTitle {
+    font-size: $defaultFontSize;
+    color: #fff;
+    font-weight: 600;
+    padding: 30px 0;
+
+    @media screen and (max-width: $smallScreen) {
+      padding: 70px 0 0;
+    }
+  }
+
+  &__CardPrice {
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    font-size: 54px;
+    font-weight: 700;
+
+    @media screen and (max-width: $smallScreen) {
+      font-size: 90px;
+    }
+  }
+
+  &__Curr {
+    display: inline-block;
+    margin: -2px 0 0 -8.5px;
+    padding: 0 2px 0 0;
+    vertical-align: top;
+    font-size: $smallFontSize;
+    position: relative;
+    top: 0;
+    font-weight: 300;
+
+    @media screen and (max-width: $smallScreen) {
+      top: 15px;
+    }
+  }
+
+  &__CardText {
+    box-sizing: border-box;
+    padding: 0 10px 15px;
+    min-height: 104px;
+    line-height: $defaultFontSize;
+    font-size: $extraSmallFontSize;
+    font-weight: 400;
+  }
+
+  &__Button {
+    height: 38px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+  }
+
+  &__Link {
+    font-size: $extraSmallFontSize;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  &__HandleToggle {
+    width: 27px;
+    height: 45px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #333;
+    border: 2px solid #272727;
+    box-sizing: border-box;
+    margin: 15px auto;
+    z-index: -1;
+
+    @media screen and (max-width: $largeScreen) {
+      width: 45px;
+      height: 27px;
+    }
+  }
+
+  &__Toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $largeScreen) {
+      display: none;
+    }
+
+    &--additionally {
+      display: none;
+
+      @media screen and (max-width: $largeScreen) {
+        display: flex;
+        margin-top: 100px;
+      }
+    }
+  }
+
+  &__Monthly {
+    color: $mainGrayColor;
+    font-size: $extraSmallFontSize;
+    font-weight: 400;
+  }
+
+  &__Toggler {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: $mainGrayColor;
+    transition: all 0.3s;
+
+    &--up {
+      transform: translateY(1px);
+
+      @media screen and (max-width: $largeScreen) {
+        transform: translateX(1px);
+      }
+    }
+
+    &--down {
+      transform: translateY(18px);
+
+      @media screen and (max-width: $largeScreen) {
+        transform: translateX(18px);
+      }
+    }
+  }
+
+  &__ToggleContent {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__Annual {
+    color: $mainGrayColor;
+    font-size: $extraSmallFontSize;
+    font-weight: 400;
+  }
+
+  &__FreeMonthly {
+    font-size: 12px;
+    margin-top: 10px;
+    color: $mainGrayColor;
+
+    @media screen and (max-width: $largeScreen) {
+      margin-top: 5px;
+    }
+  }
+
+  &__Img {
+    margin: -35px 0 -15px;
+    width: 95px;
+  }
+}

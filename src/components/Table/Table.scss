@@ -1,0 +1,88 @@
+@import "../../vars.scss";
+
+.Table {
+  @media screen and (max-width: $smallScreen) {
+    margin: 70px 0 0;
+  }
+
+  &__Row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 0;
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+    margin-top: 40px;
+
+    @media screen and (max-width: $largeScreen) {
+      grid-template-columns: 0.8fr 0.2fr repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: $mediumScreen) {
+      grid-template-columns: 0.6fr 0.2fr 1fr;
+    }
+
+    @media screen and (max-width: $smallScreen) {
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 10px;
+    }
+  }
+
+  &__TitleExp {
+    z-index: -1;
+  }
+
+  &__RowTitle {
+    cursor: pointer;
+    padding-left: 25px;
+    text-align: left;
+    color: #999;
+    font-size: $defaultFontSize;
+    font-weight: 700;
+    user-select: none;
+    margin-right: auto;
+    display: block;
+    padding-right: 12px;
+    max-width: 170px;
+    position: relative;
+
+    &::before,
+    &--rotate::before {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      transition: all 0.3s;
+      width: 15px;
+      height: 15px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 15px;
+      font-family: monospace;
+      font-size: $extraSmallFontSize;
+      content: "\25BC";
+      user-select: none;
+    }
+
+    &--rotate {
+      &::before {
+        transform: rotate(-90deg);
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__Span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #999;
+    font-size: $extraSmallFontSize;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 20px;
+}

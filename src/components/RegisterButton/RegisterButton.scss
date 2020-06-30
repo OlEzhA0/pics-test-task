@@ -1,0 +1,32 @@
+@import "../../vars.scss";
+
+.RegisterButton {
+  margin-left: 20px;
+  color: $mainPrimeColor;
+  border: 1px solid $mainPrimeColor;
+  padding: 10px 36px;
+  border-radius: 5px;
+  height: min-content;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  @media screen and (max-width: 1060px) {
+    background-color: $mainPrimeColor;
+    color: $mainBlackColor;
+    height: 34px;
+    display: block;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    margin: 0 50px 0 0;
+    line-height: 24px;
+  }
+
+  &:hover {
+    color: $mainBlackColor;
+    background-color: $mainPrimeColor;
+  }
+
+  &--noMargin {
+    margin: 0;
+  }
+}

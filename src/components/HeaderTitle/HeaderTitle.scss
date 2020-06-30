@@ -1,0 +1,31 @@
+@import "../../vars.scss";
+
+.HeaderTitle {
+  padding-top: 225px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: $extraMediumScreen) {
+    padding: 100px 0 90px;
+    max-width: 400px;
+    white-space: normal;
+  }
+
+  &__Title {
+    font-size: 64px;
+    margin-bottom: 10px;
+    font-weight: 200;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__Descr {
+    font-size: 32px;
+    @media screen and (max-width: $extraMediumScreen) {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../vars.scss";
+
+.Nav {
+  font-weight: 300;
+
+  @media screen and (max-width: 1060px) {
+    display: none;
+  }
+
+  &__List {
+    display: flex;
+  }
+
+  &__Item {
+    color: inherit;
+    list-style-type: none;
+    padding: 35px 24px;
+    height: 49px;
+    line-height: 49px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $mainBlackColor;
+    }
+  }
+
+  &__Link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    &--active {
+      color: $mainPrimeColor;
+    }
+  }
+
+  &__DropList {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3;
+    display: block;
+    background-color: rgba($color: $mainBlackColor, $alpha: 0.8);
+    width: 295px;
+    list-style-type: none;
+    padding: 19px 0;
+    color: #fff;
+  }
+
+  &__DropItem {
+    padding: 7px 15px 7px 35px;
+
+    &:hover {
+      background-color: #252324;
+    }
+  }
+}
+
+.Nav__Item:hover + .Nav__DropList {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.Nav__DropList:hover {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;  
+}
+
+.Nav__DropList:hover .Nav__Item:hover {
+  background-color: $mainBlackColor;
+}
