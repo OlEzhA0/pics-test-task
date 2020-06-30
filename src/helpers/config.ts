@@ -1,5 +1,3 @@
-import { TableDropRow } from "../react-app-env";
-
 export const HEADER_NAV_CONFIG: HeaderNavElement[] = [
   {
     id: "howItWorking",
@@ -201,16 +199,19 @@ export const TABLE_INFO: TableInfo = {
     cardText: "Individual users, freelancers",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
         },
-        Searching: {
+        "Searching": {
           dataTitle: "Some text",
           main: "markDown green",
         },
-        Downloading: {
+        "Downloading": {
           dataTitle: "Some text",
           main: "markDown green",
         },
@@ -220,7 +221,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -240,7 +244,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -259,7 +266,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -271,7 +281,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -307,7 +320,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -327,7 +343,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -351,7 +370,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -427,7 +449,10 @@ export const TABLE_INFO: TableInfo = {
     cardText: "Individual users, freelancers",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -446,7 +471,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -466,7 +494,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -485,7 +516,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -497,7 +531,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -533,7 +570,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -553,7 +593,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -577,7 +620,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -654,7 +700,10 @@ export const TABLE_INFO: TableInfo = {
     cardText: "Small team, new business",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -673,7 +722,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -693,7 +745,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -712,7 +767,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -724,7 +782,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -760,7 +821,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -780,7 +844,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -804,7 +871,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -881,7 +951,10 @@ export const TABLE_INFO: TableInfo = {
     cardText: "Online retailers, established agencies",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -900,7 +973,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -920,7 +996,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -939,7 +1018,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -951,7 +1033,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -987,7 +1072,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -1007,7 +1095,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1031,7 +1122,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1108,7 +1202,10 @@ export const TABLE_INFO: TableInfo = {
     cardText: "Medium team, established compan",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1127,7 +1224,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -1147,7 +1247,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1166,7 +1269,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -1178,7 +1284,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -1214,7 +1323,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -1234,7 +1346,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown yellow",
+        value: {
+          main: "markDown yellow",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1258,7 +1373,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1338,7 +1456,10 @@ export const TABLE_INFO: TableInfo = {
       "Get in touch with our Sales team to discuss specific needs of your organisation",
     info: {
       "Basic DAM functionality": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Uploading: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1357,7 +1478,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Your team and library": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Maximum size of the library, TB": {
           dataTitle: "Some text",
           main: "infinity",
@@ -1377,7 +1501,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Sharing and collaboration": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Commenting: {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1396,7 +1523,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Storage Syncronization": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         Manual: {
           dataTitle: "Some text",
           main: "text",
@@ -1408,7 +1538,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Analyst & reporting": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Activity Logs": {
           dataTitle: "Some text",
           main: "text",
@@ -1444,7 +1577,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Metadata management": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Metadata fields management": {
           dataTitle: "Some text",
           main: "x",
@@ -1464,7 +1600,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       Support: {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Online knowledge base": {
           dataTitle: "Some text",
           main: "markDown green",
@@ -1488,7 +1627,10 @@ export const TABLE_INFO: TableInfo = {
         },
       },
       "Integration with 3d party tools and services": {
-        main: "markDown green",
+        value: {
+          main: "markDown green",
+          dataTitle: '',
+        },
         "Google Drive": {
           dataTitle: "Some text",
           main: "markDown green",

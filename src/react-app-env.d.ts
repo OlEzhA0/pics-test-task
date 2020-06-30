@@ -1,4 +1,3 @@
-import { PRICING_FAQ } from "./helpers/config";
 /// <reference types="react-scripts" />
 
 interface HeaderNavElement {
@@ -27,32 +26,35 @@ interface PricingFaq {
 }
 
 interface TableInfo {
-  [key: string]: {
-    price: {
-      mo?: number;
-      yr?: number;
-    };
-    img?: string;
-    textColor?: string;
-    cardColor: string;
-    cardText: string;
-    info: {
-      [key: string]: {
-        main: string;
-        [key: string]: {
-          dataTitle: string;
-          main: string;
-          text?: string;
-        };
-      };
-    };
+  [key: string]: TableCard;
+}
+
+interface TableCard {
+  price: {
+    mo: number;
+    yr?: number;
+  };
+  img?: string;
+  textColor?: string;
+  cardColor: string;
+  cardText: string;
+  info: {
+    [key: string]: TableCaseInfo;
   };
 }
 
-interface TableDropRow {
-  [key: string]: string[]
+interface TableCaseInfo {
+  [key: string]: TableCardInfo;
 }
 
-interface TableConfig {
-  
+interface TableCardInfo {
+  dataTitle: string;
+  main: string;
+  text?: string;
 }
+
+interface TableDropRow {
+  [key: string]: string[];
+}
+
+interface TableConfig {}

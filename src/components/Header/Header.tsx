@@ -11,7 +11,6 @@ interface Props {
 }
 
 export const Header: React.FC<Props> = ({ header }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div
@@ -38,18 +37,9 @@ export const Header: React.FC<Props> = ({ header }) => {
           </Link>
         </div>
         <div className="Header__Info">
-          <input
-            id="toggle"
-            type="checkbox"
-            className="nav__toggler"
-            checked={menuOpen}
-            onChange={() => setMenuOpen(!menuOpen)}
-          />
-          <label htmlFor="toggle" className="menu-hamb">
-            <span className="menu__span"></span>
-          </label>
+          
           <Nav />
-          <NavMenu menuStatus={menuOpen} />
+          
           <RegisterButton />
         </div>
       </div>

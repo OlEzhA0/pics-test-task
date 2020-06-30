@@ -27,7 +27,7 @@ export const TableData: React.FC<Props> = ({ info, columns }) => {
         </label>
         {columns.map((sim) => (
           <span className="Table__Span" key={sim}>
-            {swtitchTableText(TABLE_INFO[sim].info[info].main)}
+            {swtitchTableText(TABLE_INFO[sim].info[info].value.main)}
           </span>
         ))}
       </div>
@@ -60,7 +60,7 @@ export const TableData: React.FC<Props> = ({ info, columns }) => {
                   let text = "";
 
                   if (main === "text") {
-                    text = TABLE_INFO[sim].info[info][prop].text;
+                    text = TABLE_INFO[sim].info[info][prop].text || "";
                   }
 
                   return (

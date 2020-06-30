@@ -53,7 +53,7 @@ export const HomePage: React.FC = () => {
         <HeaderTitle />
         {window.innerWidth < largeScreen && <PlansToggle month={month} setMonth={setMonth} />}
         {tableConfig?.map((config) => (
-          <Plans columns={config} screenWidth={screenWidth} month={month} setMonth={setMonth} />
+          <Plans columns={config} key={config[0]} screenWidth={screenWidth} month={month} setMonth={setMonth} />
         ))}
         <Testimonials />
         <PricingFAQ />
