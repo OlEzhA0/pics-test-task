@@ -5,13 +5,14 @@ import cn from "classnames";
 interface Props {
   month: boolean;
   setMonth: (month: boolean) => void;
+  additionallity: string
 }
 
-export const PlansToggle: React.FC<Props> = ({ month, setMonth }) => {
+export const PlansToggle: React.FC<Props> = ({ month, setMonth, additionallity }) => {
   return (
-    <div className="Plans__Toggle--additionally container">
+    <div className={`Plans__Toggle${additionallity} container`}>
       <label
-        className="PlansToggle__ToggleContent"
+        className={`Plans__ToggleContent${additionallity}`}
         onClick={() => setMonth(!month)}
       >
         <p className="Plans__Monthly"> Monthly</p>

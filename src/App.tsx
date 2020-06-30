@@ -38,7 +38,7 @@ function App() {
         <Route path="/pricing" exact component={HomePage} />
         <Route path="/" component={NotAvailable} />
       </Switch>
-        <Header header={headerVisible} />
+      <Header header={headerVisible} />
       <Footer />
     </>
   );

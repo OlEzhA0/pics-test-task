@@ -3,6 +3,7 @@ import "./Plans.scss";
 import { TABLE_INFO } from "../../helpers";
 import cn from "classnames";
 import { Table } from "../Table";
+import { PlansToggle } from "../PlansToggle";
 
 interface Props {
   columns: string[];
@@ -11,34 +12,22 @@ interface Props {
   setMonth: (month: boolean) => void;
 }
 
-export const Plans: React.FC<Props> = ({ columns, screenWidth, month, setMonth }) => {
-
+export const Plans: React.FC<Props> = ({
+  columns,
+  screenWidth,
+  month,
+  setMonth,
+}) => {
   return (
     <>
       <div className="Plans tableContainer">
-        <div className={cn({
-          "Plans__Cards": true,
-          container: screenWidth <= 1150,
-        })}>
-          <div className="Plans__Toggle">
-            <label
-              className="Plans__ToggleContent"
-              onClick={() => setMonth(!month)}
-            >
-              <p className="Plans__Monthly"> Monthly</p>
-              <div className="Plans__HandleToggle">
-                <div
-                  className={cn({
-                    Plans__Toggler: true,
-                    "Plans__Toggler--up": !month,
-                    "Plans__Toggler--down": month,
-                  })}
-                />
-              </div>
-              <p className="Plans__Annual">Annual</p>
-              <p className="Plans__FreeMonthly">(2 months free)</p>
-            </label>
-          </div>
+        <div
+          className={cn({
+            Plans__Cards: true,
+            container: screenWidth <= 1150,
+          })}
+        >
+          <PlansToggle month={month} setMonth={setMonth} additionallity="" />
           {columns.map((card) => (
             <div
               className="Plans__Card"

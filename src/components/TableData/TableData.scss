@@ -3,19 +3,18 @@
 .TableData {
   white-space: normal;
   &__Info {
-    transform: scale(1, 0.5);
-    transition: all 0s;
+    transform: scale(1, 0.5) translateY(-100px);
     visibility: hidden;
     opacity: 0;
     position: absolute;
-
+    transition: all 0.4s;
     &--open {
       transition: all 0.4s;
 
       position: relative;
       visibility: visible;
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1) translateY(0);
     }
   }
 
@@ -28,15 +27,13 @@
     }
 
     @media screen and (max-width: $mediumScreen) {
-      grid-template-columns: .6fr .2fr 1fr;
+      grid-template-columns: 0.6fr 0.2fr 1fr;
     }
 
     @media screen and (max-width: $smallScreen) {
       grid-template-columns: 2fr 1fr;
       grid-column-gap: 10px;
     }
-
-    
 
     &:nth-child(even) {
       background-color: #151515;

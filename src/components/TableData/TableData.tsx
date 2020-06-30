@@ -7,10 +7,11 @@ import cn from "classnames";
 interface Props {
   info: string;
   columns: string[];
+  defaultOpen: boolean;
 }
 
-export const TableData: React.FC<Props> = ({ info, columns }) => {
-  const [openInfo, setOpenInfo] = useState(true);
+export const TableData: React.FC<Props> = ({ info, columns, defaultOpen }) => {
+  const [openInfo, setOpenInfo] = useState(!defaultOpen);
 
   return (
     <>

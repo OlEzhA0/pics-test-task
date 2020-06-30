@@ -17,8 +17,8 @@ export const Table: React.FC<Props> = ({ columns, screenWidth }) => {
         container: screenWidth < 1150,
       })}
     >
-      {TABLE_ROW.map((info) => (
-        <TableData info={info} key={info} columns={columns} />
+      {TABLE_ROW.map((info, i) => (
+        <TableData info={info} key={info} columns={columns} defaultOpen={i === 0} />
       ))}
     </div>
   );
