@@ -1,4 +1,4 @@
-@import './vars.scss';
+@import "./vars.scss";
 
 body,
 html,
@@ -14,8 +14,8 @@ p {
 
 html {
   font-size: $defaultFontSize;
-  font: 300 $defaultFontSize/1.2222222222 "Fira Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font: 300 $defaultFontSize/1.2222222222 "Fira Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   font-weight: 300;
   background-color: $mainDefaultColor;
   white-space: nowrap;

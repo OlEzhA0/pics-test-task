@@ -29,17 +29,16 @@ function App() {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
-  }, [scrollPos])
-
+  }, [scrollPos]);
 
   return (
     <>
-      <Header header={headerVisible} />
       <div className="main-bg" />
       <Switch>
         <Route path="/pricing" exact component={HomePage} />
         <Route path="/" component={NotAvailable} />
       </Switch>
+        <Header header={headerVisible} />
       <Footer />
     </>
   );

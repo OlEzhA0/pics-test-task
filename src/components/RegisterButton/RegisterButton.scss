@@ -9,6 +9,7 @@
   height: min-content;
   text-decoration: none;
   transition: all 0.3s;
+  font-size: $defaultFontSize;
 
   @media screen and (max-width: 1060px) {
     background-color: $mainPrimeColor;
