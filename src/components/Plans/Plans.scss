@@ -55,7 +55,6 @@
 
   &__Card {
     overflow: hidden;
-    z-index: -1;
   
     @media screen and (max-width: $smallScreen) {
       width: 280px;
