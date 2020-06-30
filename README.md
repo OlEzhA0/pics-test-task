@@ -1,2 +1,2 @@
-- [DEMO LINK]();
-- [PULL REQUEST LINK]();
+- [DEMO LINK](https://olezha0.github.io/pics-test-task/index.html#/pricing);
+- [PULL REQUEST LINK](https://github.com/OlEzhA0/pics-test-task/pull/1/files);
