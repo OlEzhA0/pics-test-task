@@ -1,0 +1,28 @@
+@import "../../vars.scss";
+
+.PricingFAQ {
+  margin: 200px auto;
+  white-space: normal;
+
+  &__Title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  &__Item {
+    list-style-type: none;
+    margin-bottom: 25px;
+  }
+
+  &__Link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.1s;
+
+    &:hover {
+      color: $mainPrimeColor
+    }
+  }
+}

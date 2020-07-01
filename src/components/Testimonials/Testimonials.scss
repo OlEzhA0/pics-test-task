@@ -1,0 +1,113 @@
+@import "../../vars.scss";
+
+.Testimonials {
+  margin: 200px auto 125px;
+  white-space: normal;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+  &::after {
+    font-weight: 700;
+    position: absolute;
+    font-size: 12em;
+    line-height: 1;
+    color: $mainPrimeColor;
+    top: -83px;
+    left: 55px;
+    z-index: 2;
+    content: "\201C";
+
+    @media screen and (max-width: $extraMediumScreen) {
+      left: 0;
+    }
+  }
+
+  &__Container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      max-width: 95%;
+
+    }
+  }
+
+  &__Text {
+    border-radius: 6px;
+    display: block;
+    padding: 10px 15px 20px;
+    background-image: linear-gradient(
+      to top right,
+      #1e1e1e 10%,
+      transparent 100%
+    );
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    color: #c1c1c1;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      padding: 35px;
+      font-size: $smallFontSize;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      height: 0;
+      width: 0;
+      border-top: 20px solid #1e1e1e;
+      border-left: 31px solid transparent;
+    }
+
+    &::before {
+      font-weight: 700;
+      position: absolute;
+      font-size: 6em;
+      line-height: 1;
+      color: $mainPrimeColor;
+      bottom: -105px;
+      right: -50px;
+      z-index: 2;
+      content: "\201D";
+
+      @media screen and (max-width: $extraMediumScreen) {
+        right: 0;
+      }
+    }
+  }
+
+  &__DownSite {
+    margin: 20px 0 0 75px;
+    color: #c1c1c1;
+    display: flex;
+    
+    @media screen and (max-width: $extraMediumScreen) {
+      font-size: $smallFontSize;
+      flex-direction: column;
+    }
+  }
+
+  &__About {
+    display: inline-block;
+    text-align: center;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      text-align: start;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__Author {
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__Logo {
+    margin-left: 12px;
+  }
+}

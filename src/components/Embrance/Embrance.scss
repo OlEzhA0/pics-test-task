@@ -1,0 +1,136 @@
+@import "../../vars.scss";
+
+.Embrance {
+  margin: 200px auto;
+  text-align: center;
+
+  &__Container {
+    background-color: #303030;
+    border-radius: 6px;
+  }
+
+  &__Descr {
+    padding: 30px;
+  }
+
+  &__Title {
+    font-size: 57px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $extraSmallLargeScreen) {
+      font-size: 44px;
+    }
+
+    @media screen and (max-width: $extraMediumScreen) {
+      font-size: 30px;
+      white-space: normal;
+    }
+  }
+
+  &__AdvList {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      flex-direction: column;
+    }
+  }
+
+  &__AdvItem {
+    @media screen and (max-width: $extraSmallLargeScreen) {
+      font-size: $smallFontSize;
+      white-space: normal;
+    }
+
+    @media screen and (max-width: $extraMediumScreen) {
+      margin: 7px 0;
+    }
+  }
+
+  &__Sep {
+    margin: 0 41px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #999;
+
+    @media screen and (max-width: $extraSmallLargeScreen) {
+      margin: 0 22px;
+
+    }
+  
+  }
+
+  &__SignUp {
+    padding: 30px;
+    background-color: #242424;
+  }
+
+  &__Form {
+    max-width: 870px;
+    margin: 0 auto;
+    display: flex;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      flex-direction: column;
+    }
+  }
+
+  &__Inp {
+    width: 100%;
+    box-sizing: border-box;
+    color: #242424;
+    border: 1px solid #d0d0d0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 4px 15px 5px;
+    height: 50px;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-weight: 200;
+    }
+  }
+
+  &__Button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid $mainPrimeColor;
+    background-color: $mainPrimeColor;
+    color: $mainDefaultColor;
+    padding: 10px 15px;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: $defaultFontSize;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffd429;
+      color: $mainDefaultColor;
+      border-color: #ffd429;
+    }
+  }
+
+  &__InpWrap {
+    width: 33.333%;
+    padding: 0 8px;
+
+    @media screen and (max-width: $extraMediumScreen) {
+      width: 100%;
+      margin-bottom: $smallFontSize;
+      padding: 0;
+      height: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
